@@ -1,0 +1,33 @@
+*
+    //so the width is not changed if the margin is
+    box-sizing: border-box
+body
+    font-family: $default_font
+    margin: 0
+    //for the center: everything is put in a row
+    display: flex
+    //to center it horizontally
+    align-items: center
+    //Centers it vertically
+    justify-content: center
+    
+    //take up the viewport of the browser
+    height: 100vh
+    //not to have scrollbars
+    overflow: hidden
+
+.container
+    display: flex
+    //Makes it a width of the entire browser
+    width: 90vw
+    
+@media (max-width: 480px)
+    .container
+        width: 100vw
+
+    .panel
+        &:nth-of-type(4)
+            display: none
+        &:nth-of-type(5)
+            display: none
+

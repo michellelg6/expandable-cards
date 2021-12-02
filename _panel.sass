@@ -1,0 +1,57 @@
+.panel
+    //In order to see the entire image
+    background-size: auto 100%
+    //???
+    background-position: center
+    //For it not to repeat
+    background-repeat: no-repeat
+    //Not the entire viewport, but most of it
+    //...so I can see some of the whole screen
+    height: 80vh
+    //?????
+    flex: 0.5
+    //For spacing
+    margin: 10px
+    ///To make something move relative to its current position
+    position: relative
+    //To make the corners round
+    border-radius: 50px
+    //Make the text white
+    color: #fff
+    //Change the cursor
+    cursor: pointer
+    //That it grow 50% more than the others
+    flex: 0.5
+    //Spacing
+    margin: 10px
+    //To make something move relative to its current position
+    //rather than the parent
+    position: relative
+    //For the Transition Effect
+    transition: flex 0.7s ease-in //change it to see if it does anything
+
+.panel h3
+    //Font size
+    font-size: 1.5em
+      //To make something move relative to its parent
+    //rather than the current position
+    position: absolute
+    //20px from the bottom
+    bottom: 20px
+    //20px from the left
+    left: 20px
+    //For no margin. Why does he want to do that?
+    margin: 0
+    //To make them invisible, showing them when the card is active
+    opacity: 0
+
+.panel.active
+    //Make it expand to 5
+    flex: 5 //What do the flex numbers mean?
+    h3
+        //What is this???
+        transition: opacity 0.3s ease-in 0.4s
+        opacity: 1
+  
+
+
